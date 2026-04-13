@@ -32,6 +32,22 @@ body {
     font-weight: bold;
     color: #7C3AED;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #38bdf8;
+}
 
 .nav-links {
     display: flex;
@@ -39,15 +55,19 @@ body {
     gap: 30px;
 }
 
+.nav-links li {
+    list-style: none;
+}
+
 .nav-links a {
-    color: white;
     text-decoration: none;
-    font-size: 1rem;
+    color: white;
+    font-size: 18px;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #06B6D4;
+    color: #38bdf8;
 }
 
 /* Hero */
