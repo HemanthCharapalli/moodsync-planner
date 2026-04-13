@@ -6,10 +6,11 @@
 }
 
 body {
-    background: linear-gradient(135deg, #0B1020, #111827);
-    color: white;
-    min-height: 100vh;
-    overflow-x: hidden;
+  background: linear-gradient(135deg, #0B1020, #111827);
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* Navbar */
@@ -171,27 +172,33 @@ body {
         flex-direction: column;
     }
 }
-
 /* Background glow */
 .bg-glow {
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
-  filter: blur(120px);
-  z-index: -1;
+  filter: blur(140px);
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .glow1 {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background: #3b82f6;
   top: 100px;
   left: 100px;
 }
 
 .glow2 {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   background: #8b5cf6;
   bottom: 100px;
   right: 100px;
+}
+
+.navbar,
+.hero {
+  position: relative;
+  z-index: 2;
 }
